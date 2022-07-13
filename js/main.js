@@ -1,17 +1,17 @@
 
 function convertir() {
-let valore = parseInt(document.getElementByid("valor").value);
+let valorInput = document.getElementById('valor');
 let resultado = 0;
 const dolar = 187;
 const euro = 254;
 
-if (document.getElementByid("uno").checked){
-    resultado = valore / dolar;
+if (document.getElementById("uno").checked){
+    resultado = parseInt(valorInput.value) / dolar;
     alert("El cambio de pesos a dolares es: $" + resultado);
 }
 
-else if (document.getElementByid("dos").checked) {
-    resultado = valore / euro;
+else if (document.getElementById("dos").checked) {
+    resultado = parseInt(valorInput.value) / euro;
     alert("El cambio de pesos a euros es: " + resultado);
 }
 
