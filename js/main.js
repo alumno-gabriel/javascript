@@ -1,22 +1,24 @@
-let contadorEdad =0;
-for (let i =0; i<=10; i++){
-    
-    txt=parseInt(prompt("Por favor ingrese su edad: "));
-if (txt>=18)
 
-{
-    contadorEdad++;
-    alert("Sos mayor de edad, podes acceder");
+function convertir() {
+let valore = parseInt(document.getElementByid("valor").value);
+let resultado = 0;
+const dolar = 187;
+const euro = 254;
+
+if (document.getElementByid("uno").checked){
+    resultado = valore / dolar;
+    alert("El cambio de pesos a dolares es: $" + resultado);
+}
+
+else if (document.getElementByid("dos").checked) {
+    resultado = valore / euro;
+    alert("El cambio de pesos a euros es: " + resultado);
 }
 
 else{
-    alert("Sos menor de edad, no podes acceder");
+    alert("Tienes que completar todos los campos requeridos")
 }
 
 }
-
-console.log("La cantidad de personas mayores de edad es: " + contadorEdad)
-
-console.log("La cantidad de personas menores de edad es: " + contadorEdad)
 
 
